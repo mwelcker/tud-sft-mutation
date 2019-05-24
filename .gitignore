@@ -1,0 +1,4 @@
+.stryker-tmp
+node_modules
+reports
+.idea/**/*.*
