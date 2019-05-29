@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import PageAccess from 'components/PageAccess'
-import DatePicker from 'components/DatePicker'
+import PageAccess from './components/PageAccess'
+import DatePicker from './components/DatePicker'
 
 export default {
   components: { PageAccess, DatePicker },
