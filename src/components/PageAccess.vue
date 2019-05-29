@@ -31,7 +31,7 @@ export default {
     calculateAge(birthdayDate) {
       const ageDifferenceInMilliseconds = Date.now() - birthdayDate.getTime()
       const ageDate = new Date(ageDifferenceInMilliseconds)
-      return Math.abs(ageDate.getUTCFullYear() - 1970)
+      return Math.abs(ageDate.getUTCFullYear() - 1970) >= 18
     },
     verify() {
       if (!this.date) {
