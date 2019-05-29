@@ -29,9 +29,12 @@ export default {
   },
   methods: {
     calculateAge(birthdayDate) {
-      const ageDifferenceInMilliseconds = Date.now() - birthdayDate.getTime()
+      const currentDateTime = Date.now()
+      const birthdayDateTime = birthdayDate.getTime()
+      const ageDifferenceInMilliseconds = currentDateTime - birthdayDateTime
       const ageDate = new Date(ageDifferenceInMilliseconds)
-      return Math.abs(ageDate.getUTCFullYear() - 1970)
+      const yearDifference = ageDate.getUTCFullYear() - 1970
+      return Math.abs(yearDifference)
     },
     verify() {
       if (!this.date) {
