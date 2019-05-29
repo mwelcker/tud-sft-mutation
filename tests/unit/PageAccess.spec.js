@@ -1,7 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
 import PageAccess from '@/components/PageAccess.vue'
-import { dateNotSetMessage } from '@/constants'
-import { accessGrantedMessage, notOlderThanEighteenMessage } from '../../src/constants'
+import { accessGrantedMessage, dateNotSetMessage, notOlderThanEighteenMessage } from '@/constants'
 
 describe('PageAccess.vue', () => {
   it('shows error message with unset date', () => {
