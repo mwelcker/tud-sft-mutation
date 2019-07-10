@@ -24,7 +24,7 @@ export default {
   },
   computed: {
     isOlderThanEighteen() {
-      return this.calculateAge(this.date) >= 18
+      return this.calculateAge(this.date) > 17
     }
   },
   methods: {
@@ -33,8 +33,7 @@ export default {
       const birthdayDateTime = birthdayDate.getTime()
       const ageDifferenceInMilliseconds = currentDateTime - birthdayDateTime
       const ageDate = new Date(ageDifferenceInMilliseconds)
-      const yearDifference = ageDate.getUTCFullYear() - 1970
-      return Math.abs(yearDifference)
+      return ageDate.getUTCFullYear() - 1970
     },
     verify() {
       if (!this.date) {
