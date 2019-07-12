@@ -3,7 +3,7 @@ import PageAccess from '@/components/PageAccess.vue'
 import { accessGrantedMessage, dateNotSetMessage, notOlderThanEighteenMessage } from '@/constants'
 
 /* Change this variable to run the improved test case */
-export const USE_IMPROVED_TESTS = true
+export const USE_IMPROVED_TESTS = process.env.IMPROVED_TEST_SUITE
 
 describe('PageAccess.vue', () => {
   USE_IMPROVED_TESTS ? improvedTestSet() : badTests()
