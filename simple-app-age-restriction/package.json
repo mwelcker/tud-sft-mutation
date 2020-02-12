@@ -6,8 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:good": "cross-env IMPROVED_TEST_SUITE=1 npm run test:unit && cross-env IMPROVED_TEST_SUITE=1 npm run test:stryker",
-    "test:bad": "npm run test:unit && npm run test:stryker",
+    "test:with-new-test": "cross-env IMPROVED_TEST_SUITE=1 npm run test:unit && cross-env IMPROVED_TEST_SUITE=1 npm run test:stryker",
+    "test:original": "npm run test:unit && npm run test:stryker",
     "test:unit": "vue-cli-service test:unit --coverage",
     "test:stryker": "cross-env VUE_CLI_BABEL_TARGET_NODE=true VUE_CLI_BABEL_TRANSPILE_MODULES=true stryker run stryker.config.js"
   },

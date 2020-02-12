@@ -53,3 +53,4 @@ export default {
   }
 }
 </script>
+<!-- TIP: is checking the year of birth really enough? -->
