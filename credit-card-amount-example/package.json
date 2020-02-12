@@ -1,0 +1,27 @@
+{
+  "name": "tud-sft-mutation",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "npm run test:unit",
+    "test:original": "npm run test:unit && npm run test:stryker",
+    "test:with-fix": "cross-env WITH_NEW_TEST=1 npm run test:unit && cross-env WITH_NEW_TEST=1 npm run test:stryker",
+    "test:unit": "jest",
+    "test:stryker": "stryker run stryker.config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@nuxtjs/eslint-config": "^2.0.2",
+    "@stryker-mutator/core": "^2.0.0",
+    "@stryker-mutator/html-reporter": "^2.0.1",
+    "@stryker-mutator/javascript-mutator": "^2.0.0",
+    "@stryker-mutator/jest-runner": "^2.0.0",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^25.1.0",
+    "cross-env": "^7.0.0",
+    "eslint": "^5.16.0",
+    "jest": "^24.9.0",
+    "stryker-cli": "^1.0.0"
+  }
+}
