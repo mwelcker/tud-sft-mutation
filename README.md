@@ -5,7 +5,7 @@ Lecture [*Software Fault Tolerance*](https://tu-dresden.de/ing/informatik/sya/se
 
 Link to the [the slides](https://docs.google.com/presentation/d/17KY-2WvpM3wg9jpHj4OigJi0ajV1wQoz6utshj7yEJM/). 
 
-* Example one: [./credit-card-amount-example](The credit card example from the lesson)
-* Example two: [./simple-app-age-restriction](A small age restriction app)
+* Example one: [The credit card example from the lesson](./credit-card-amount-example)
+* Example two: [A small age restriction app](./simple-app-age-restriction)
 
 The slides and examples were created by [Martin Welcker](https://github.com/MartinWelcker/) and [Alexander Lichter](https://github.com/manniL/).
